@@ -1,0 +1,38 @@
+Description:
+    Scaffolds an entire resource, from model and migration to controller and views, along with a full test suite, just like the standard Rails scaffold generator.The ext_scaffold generator uses the Ext Javascript framework to build the GUI elements (forms and tables).
+
+Prerequisites:
+	You need to download the Ext Javascript framework from
+	http://www.sencha.com/products/extjs3/download/
+	and unzip it into #{RAILS_ROOT}/public/ext. Ext_scaffold was tested against version 3.2 of the ExtJS framework.
+
+Example:
+    rails generate ext_scaffold Posts [Title:String]
+
+    This will create:
+           exist  app/models
+	       exist  app/controllers
+	       exist  app/helpers
+	      create  app/views/posts
+	       exist  app/views/layouts
+	      create  public/images/ext_scaffold
+	      create  public/javascripts/ext_scaffold
+	       exist  test/functional
+	       exist  test/unit
+	      create  app/views/posts/index.html.erb
+	      create  public/javascripts/ext_scaffold/posts.js
+	   	  create  app/views/layouts/posts.html.erb
+	    generate  model
+	      invoke  active_record
+	      create  app/controllers/posts_controller.rb
+	      create  app/helpers/posts_helper.rb
+	      create  public/javascripts/ext_scaffold.js
+	      create  public/javascripts/xcheckbox.js
+	      create  public/images/ext_scaffold/arrowLeft.gif
+	      create  public/images/ext_scaffold/arrowRight.gif
+	      create  public/images/ext_scaffold/find.png
+	      create  public/stylesheets/ext_scaffold.css
+	      create  test/functional/posts_controller_test.rb
+	      create  test/functional/posts_controller_test.rb
+	       route  resources :posts
+	  

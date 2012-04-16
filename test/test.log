@@ -1,0 +1,441 @@
+# Logfile created on 2012-04-14 00:12:46 +0530 by logger.rb/31641
+D, [2012-04-14T00:36:52.011436 #1404] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T00:36:52.012218 #1404] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stubmodels" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T00:36:52.013107 #1404] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T00:36:52.013364 #1404] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T00:36:52.094071 #1404] DEBUG -- :   [1m[36m (80.5ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T00:36:52.094813 #1404] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T00:36:52.095127 #1404] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T00:37:23.785557 #1411] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T00:37:23.786340 #1411] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T00:37:23.787166 #1411] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T00:37:23.787401 #1411] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T00:37:23.787740 #1411] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T00:37:23.788331 #1411] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T00:37:23.788586 #1411] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T00:39:11.452732 #1420] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mCREATE TABLE "stub_models" () [0m
+D, [2012-04-14T00:39:11.452881 #1420] DEBUG -- : SQLite3::SQLException: near ")": syntax error: CREATE TABLE "stub_models" () 
+D, [2012-04-14T00:42:20.260052 #1428] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mCREATE TABLE "stubmodels" () [0m
+D, [2012-04-14T00:42:20.260196 #1428] DEBUG -- : SQLite3::SQLException: near ")": syntax error: CREATE TABLE "stubmodels" () 
+D, [2012-04-14T00:43:10.006628 #1432] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T00:43:10.007627 #1432] DEBUG -- :   [1m[35m (0.3ms)[0m  CREATE TABLE "stubmodels" ("type" varchar(255), "name" varchar(255), "dealership_id" integer) 
+D, [2012-04-14T00:43:10.008500 #1432] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T00:43:10.008762 #1432] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T00:43:10.009175 #1432] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T00:43:10.009953 #1432] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T00:43:10.010810 #1432] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T00:43:29.994719 #1436] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T00:43:29.995933 #1436] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("type" varchar(255), "name" varchar(255), "dealership_id" integer) 
+D, [2012-04-14T00:43:29.996838 #1436] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T00:43:29.997081 #1436] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T00:43:29.997424 #1436] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T00:43:29.998021 #1436] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T00:43:29.998640 #1436] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T00:45:18.105506 #1442] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T00:45:18.106411 #1442] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T00:45:18.107244 #1442] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T00:45:18.107480 #1442] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T00:45:18.107821 #1442] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T00:45:18.108427 #1442] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T00:45:18.108685 #1442] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T00:46:23.597065 #1446] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T00:46:23.597858 #1446] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T00:46:23.598697 #1446] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T00:46:23.598936 #1446] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T00:46:23.599288 #1446] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T00:46:23.599920 #1446] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T00:46:23.600186 #1446] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T00:46:51.741194 #1451] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T00:46:51.741997 #1451] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T00:46:51.743033 #1451] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T00:46:51.743294 #1451] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T00:46:51.743638 #1451] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T00:46:51.744387 #1451] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T00:46:51.744660 #1451] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T00:47:27.466815 #1458] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T00:47:27.467593 #1458] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T00:47:27.468401 #1458] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T00:47:27.468637 #1458] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T00:47:27.468985 #1458] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T00:47:27.469566 #1458] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T00:47:27.469826 #1458] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T00:48:46.134283 #1462] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mCREATE TABLE "stub_models" () [0m
+D, [2012-04-14T00:48:46.134428 #1462] DEBUG -- : SQLite3::SQLException: near ")": syntax error: CREATE TABLE "stub_models" () 
+D, [2012-04-14T00:49:46.038385 #1469] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T00:49:46.039163 #1469] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T00:49:46.040234 #1469] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T00:49:46.040480 #1469] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T00:49:46.040828 #1469] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T00:49:46.041426 #1469] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T00:49:46.041684 #1469] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T00:51:48.210244 #1475] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T00:51:48.211014 #1475] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T00:51:48.211913 #1475] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T00:51:48.212157 #1475] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T00:51:48.212503 #1475] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T00:51:48.213122 #1475] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T00:51:48.213386 #1475] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T00:53:43.328098 #1483] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T00:53:43.328879 #1483] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T00:53:43.329689 #1483] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T00:53:43.329932 #1483] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T00:53:43.330279 #1483] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T00:53:43.330876 #1483] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T00:53:43.331138 #1483] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T00:54:35.345071 #1490] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T00:54:35.345890 #1490] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T00:54:35.346699 #1490] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T00:54:35.346936 #1490] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T00:54:35.347277 #1490] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T00:54:35.347868 #1490] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T00:54:35.348128 #1490] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T09:49:57.251929 #558] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T09:49:57.266639 #558] DEBUG -- :   [1m[35m (0.5ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T09:49:57.267601 #558] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T09:49:57.267856 #558] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T09:49:57.268225 #558] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T09:49:57.268815 #558] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T09:49:57.269107 #558] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T09:51:40.713909 #564] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T09:51:40.714718 #564] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T09:51:40.715541 #564] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T09:51:40.715782 #564] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T09:51:40.716133 #564] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T09:51:40.716791 #564] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T09:51:40.717045 #564] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T09:57:08.264148 #575] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T09:57:08.264947 #575] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T09:57:08.265796 #575] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T09:57:08.266039 #575] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T09:57:08.266429 #575] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T09:57:08.267030 #575] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T09:57:08.267328 #575] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T09:58:33.390196 #579] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T09:58:33.391049 #579] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T09:58:33.391992 #579] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T09:58:33.392292 #579] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T09:58:33.392698 #579] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T09:58:33.393395 #579] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T09:58:33.393683 #579] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T10:01:05.187718 #583] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T10:01:05.188558 #583] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T10:01:05.189477 #583] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T10:01:05.189780 #583] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T10:01:05.190217 #583] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T10:01:05.191013 #583] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T10:01:05.191368 #583] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T10:01:54.655400 #592] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T10:01:54.656266 #592] DEBUG -- :   [1m[35m (0.5ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T10:01:54.657111 #592] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T10:01:54.657349 #592] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T10:01:54.657700 #592] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T10:01:54.658305 #592] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T10:01:54.658601 #592] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T10:11:10.013838 #599] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T10:11:10.014722 #599] DEBUG -- :   [1m[35m (0.5ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T10:11:10.015676 #599] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T10:11:10.015982 #599] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T10:11:10.016332 #599] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T10:11:10.017070 #599] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T10:11:10.017331 #599] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T10:13:01.013362 #606] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T10:13:01.014293 #606] DEBUG -- :   [1m[35m (0.5ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T10:13:01.015264 #606] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T10:13:01.015586 #606] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T10:13:01.015928 #606] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T10:13:01.016757 #606] DEBUG -- :   [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T10:13:01.017016 #606] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T10:32:14.679094 #630] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T10:32:14.679979 #630] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T10:32:14.680897 #630] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T10:32:14.681219 #630] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T10:32:14.681640 #630] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T10:32:14.682317 #630] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T10:32:14.682580 #630] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T10:34:42.635631 #640] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T10:34:42.636877 #640] DEBUG -- :   [1m[35m (0.5ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T10:34:42.637761 #640] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T10:34:42.638054 #640] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T10:34:42.638463 #640] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T10:34:42.639396 #640] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T10:34:42.639674 #640] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T10:36:48.015767 #648] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T10:36:48.016694 #648] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T10:36:48.017656 #648] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T10:36:48.017895 #648] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T10:36:48.018340 #648] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T10:36:48.019031 #648] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T10:36:48.019287 #648] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T10:37:45.634499 #654] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T10:37:45.635365 #654] DEBUG -- :   [1m[35m (0.5ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T10:37:45.636302 #654] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T10:37:45.636594 #654] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T10:37:45.636935 #654] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T10:37:45.637644 #654] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T10:37:45.637899 #654] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T10:38:29.318573 #658] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T10:38:29.319473 #658] DEBUG -- :   [1m[35m (0.5ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T10:38:29.320365 #658] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T10:38:29.320710 #658] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T10:38:29.321052 #658] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T10:38:29.321709 #658] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T10:38:29.322057 #658] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T10:39:09.952168 #662] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T10:39:09.952989 #662] DEBUG -- :   [1m[35m (0.5ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T10:39:09.953959 #662] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T10:39:09.954181 #662] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T10:39:09.954951 #662] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T10:39:09.955601 #662] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T10:39:09.955962 #662] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T10:40:23.969202 #666] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T10:40:23.970050 #666] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T10:40:23.971074 #666] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T10:40:23.971311 #666] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T10:40:23.971770 #666] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T10:40:23.972453 #666] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T10:40:23.972780 #666] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T10:41:47.080427 #670] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T10:41:47.081354 #670] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T10:41:47.082792 #670] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T10:41:47.083104 #670] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T10:41:47.083447 #670] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T10:41:47.084360 #670] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T10:41:47.084628 #670] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T10:52:39.412178 #682] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T10:52:39.413077 #682] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T10:52:39.414024 #682] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T10:52:39.414326 #682] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T10:52:39.414690 #682] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T10:52:39.415405 #682] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T10:52:39.415661 #682] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T10:54:27.726878 #686] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T10:54:27.727748 #686] DEBUG -- :   [1m[35m (0.5ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T10:54:27.728661 #686] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T10:54:27.728972 #686] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T10:54:27.729388 #686] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T10:54:27.730074 #686] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T10:54:27.730331 #686] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T10:58:14.713558 #692] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T10:58:14.714451 #692] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T10:58:14.715355 #692] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T10:58:14.715653 #692] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T10:58:14.716005 #692] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T10:58:14.716754 #692] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T10:58:14.717027 #692] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T10:59:01.413052 #696] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T10:59:01.413918 #696] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T10:59:01.414942 #696] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T10:59:01.415176 #696] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T10:59:01.415615 #696] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T10:59:01.416268 #696] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T10:59:01.416595 #696] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T11:00:50.222263 #700] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T11:00:50.223162 #700] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T11:00:50.224047 #700] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T11:00:50.224341 #700] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T11:00:50.224684 #700] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T11:00:50.225399 #700] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T11:00:50.225657 #700] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T11:16:14.187446 #713] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T11:16:14.188296 #713] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T11:16:14.189300 #713] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T11:16:14.189604 #713] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T11:16:14.189949 #713] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T11:16:14.190624 #713] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T11:16:14.190880 #713] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T11:17:26.490522 #717] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T11:17:26.491323 #717] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T11:17:26.492269 #717] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T11:17:26.492533 #717] DEBUG -- :   [1m[35m (0.1ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T11:17:26.492913 #717] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T11:17:26.493546 #717] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T11:17:26.493828 #717] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T15:06:23.719250 #550] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T15:06:23.739705 #550] DEBUG -- :   [1m[35m (0.6ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T15:06:23.740695 #550] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T15:06:23.741001 #550] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T15:06:23.741379 #550] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T15:06:23.742178 #550] DEBUG -- :   [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T15:06:23.742480 #550] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T15:07:55.365161 #554] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T15:07:55.365953 #554] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T15:07:55.366858 #554] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T15:07:55.367101 #554] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T15:07:55.367456 #554] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T15:07:55.368070 #554] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T15:07:55.368336 #554] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T15:09:24.013376 #558] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T15:09:24.014267 #558] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T15:09:24.015177 #558] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T15:09:24.015490 #558] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T15:09:24.015850 #558] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T15:09:24.016621 #558] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T15:09:24.016879 #558] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T15:10:33.629388 #562] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T15:10:33.630318 #562] DEBUG -- :   [1m[35m (0.5ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T15:10:33.631298 #562] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T15:10:33.631617 #562] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T15:10:33.631965 #562] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T15:10:33.633326 #562] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T15:10:33.633603 #562] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T15:11:32.978530 #568] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T15:11:32.979407 #568] DEBUG -- :   [1m[35m (0.5ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T15:11:32.980622 #568] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T15:11:32.980927 #568] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T15:11:32.981271 #568] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T15:11:32.982155 #568] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T15:11:32.982423 #568] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T15:12:01.531709 #575] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T15:12:01.532510 #575] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T15:12:01.533332 #575] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T15:12:01.533567 #575] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T15:12:01.533913 #575] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T15:12:01.534521 #575] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T15:12:01.534787 #575] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T15:13:14.351381 #607] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T15:13:14.352267 #607] DEBUG -- :   [1m[35m (0.5ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T15:13:14.353169 #607] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T15:13:14.353477 #607] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T15:13:14.353828 #607] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T15:13:14.354599 #607] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T15:13:14.354865 #607] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T15:22:49.420146 #672] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T15:22:49.421047 #672] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T15:22:49.421958 #672] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T15:22:49.422259 #672] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T15:22:49.422614 #672] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T15:22:49.423424 #672] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T15:22:49.423691 #672] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T15:26:33.772537 #683] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T15:26:33.773763 #683] DEBUG -- :   [1m[35m (0.5ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T15:26:33.774975 #683] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T15:26:33.775226 #683] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T15:26:33.775578 #683] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T15:26:33.776187 #683] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T15:26:33.776453 #683] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T15:28:17.136817 #724] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T15:28:17.137606 #724] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T15:28:17.138441 #724] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T15:28:17.138679 #724] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T15:28:17.139029 #724] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T15:28:17.139627 #724] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T15:28:17.139890 #724] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T15:34:39.892905 #745] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T15:34:39.893775 #745] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T15:34:39.894830 #745] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T15:34:39.895175 #745] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T15:34:39.895654 #745] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T15:34:39.896522 #745] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T15:34:39.896805 #745] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T15:36:54.268197 #753] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T15:36:54.269024 #753] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T15:36:54.269955 #753] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T15:36:54.270254 #753] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T15:36:54.270596 #753] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T15:36:54.271244 #753] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T15:36:54.271546 #753] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T15:37:23.148268 #757] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T15:37:23.149173 #757] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T15:37:23.150109 #757] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T15:37:23.150419 #757] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T15:37:23.151143 #757] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T15:37:23.151900 #757] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T15:37:23.152163 #757] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T15:59:53.632693 #809] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T15:59:53.633505 #809] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T15:59:53.634372 #809] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T15:59:53.634613 #809] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T15:59:53.634975 #809] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T15:59:53.635576 #809] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T15:59:53.635863 #809] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T16:02:38.018336 #842] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T16:02:38.019133 #842] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T16:02:38.019972 #842] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T16:02:38.020210 #842] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T16:02:38.020556 #842] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T16:02:38.021165 #842] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T16:02:38.021454 #842] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T16:04:23.354020 #848] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T16:04:23.354797 #848] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T16:04:23.355627 #848] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T16:04:23.355865 #848] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T16:04:23.356209 #848] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T16:04:23.356802 #848] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T16:04:23.357085 #848] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T16:05:18.186324 #854] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T16:05:18.187116 #854] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T16:05:18.187986 #854] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T16:05:18.188234 #854] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T16:05:18.188579 #854] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T16:05:18.189177 #854] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T16:05:18.189467 #854] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T16:13:10.140060 #936] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T16:13:10.140951 #936] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T16:13:10.141845 #936] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T16:13:10.142145 #936] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T16:13:10.142547 #936] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T16:13:10.143228 #936] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T16:13:10.143520 #936] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T19:52:06.151828 #2135] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T19:52:06.152624 #2135] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T19:52:06.153446 #2135] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T19:52:06.153682 #2135] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T19:52:06.154025 #2135] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T19:52:06.154624 #2135] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T19:52:06.154939 #2135] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T19:53:22.885564 #2142] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T19:53:22.886434 #2142] DEBUG -- :   [1m[35m (0.5ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T19:53:22.887345 #2142] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T19:53:22.887672 #2142] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T19:53:22.888033 #2142] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T19:53:22.888769 #2142] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T19:53:22.889029 #2142] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-14T22:14:54.189076 #422] DEBUG -- :   [1m[36m (0.6ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-14T22:14:54.212427 #422] DEBUG -- :   [1m[35m (0.5ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-14T22:14:54.214595 #422] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-14T22:14:54.214848 #422] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-14T22:14:54.215227 #422] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-14T22:14:54.221171 #422] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-14T22:14:54.221496 #422] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-16T00:34:57.445010 #750] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-16T00:34:57.462148 #750] DEBUG -- :   [1m[35m (0.7ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-16T00:34:57.463237 #750] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-16T00:34:57.463546 #750] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-16T00:34:57.463930 #750] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-16T00:34:57.464603 #750] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-16T00:34:57.464998 #750] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-16T00:54:26.895228 #952] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-16T00:54:26.896004 #952] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-16T00:54:26.896807 #952] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-16T00:54:26.897038 #952] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-16T00:54:26.897383 #952] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-16T00:54:26.897978 #952] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-16T00:54:26.898269 #952] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-16T01:48:03.109097 #1107] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-16T01:48:03.127316 #1107] DEBUG -- :   [1m[35m (0.6ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-16T01:48:03.128410 #1107] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-16T01:48:03.128670 #1107] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-16T01:48:03.129080 #1107] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-16T01:48:03.129699 #1107] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-16T01:48:03.130011 #1107] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-16T02:32:18.540653 #1259] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-16T02:32:18.541485 #1259] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-16T02:32:18.542427 #1259] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-16T02:32:18.542660 #1259] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-16T02:32:18.543041 #1259] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-16T02:32:18.543633 #1259] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-16T02:32:18.543917 #1259] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-16T02:37:00.352852 #1268] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-16T02:37:00.353714 #1268] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-16T02:37:00.354715 #1268] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-16T02:37:00.354950 #1268] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-16T02:37:00.355315 #1268] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-16T02:37:00.356440 #1268] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-16T02:37:00.356757 #1268] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+D, [2012-04-16T02:56:21.372555 #1357] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mselect sqlite_version(*)[0m
+D, [2012-04-16T02:56:21.373529 #1357] DEBUG -- :   [1m[35m (0.4ms)[0m  CREATE TABLE "stub_models" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) 
+D, [2012-04-16T02:56:21.374484 #1357] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+D, [2012-04-16T02:56:21.374805 #1357] DEBUG -- :   [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+D, [2012-04-16T02:56:21.375170 #1357] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+D, [2012-04-16T02:56:21.375843 #1357] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+D, [2012-04-16T02:56:21.376193 #1357] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
